@@ -1,0 +1,1413 @@
+[
+  {
+    "id": "folio_sarah_jenkins_dev",
+    "userId": "user_sarah_jenkins",
+    "settings": {
+      "title": "Sarah Jenkins — Staff Systems Engineer",
+      "slug": "sarah-jenkins",
+      "seoTitle": "Sarah Jenkins — Systems & Distributed Infrastructure",
+      "seoDescription": "Staff software engineer building distributed systems, Kubernetes tools, and high-performance microservices."
+    },
+    "status": "published",
+    "createdAt": "2026-10-10T14:48:03.907Z",
+    "updatedAt": "2026-10-24T10:48:03.907Z",
+    "publishedAt": "2026-10-24T10:48:03.907Z",
+    "publishedSlug": "sarah-jenkins",
+    "draftData": {
+      "profile": {
+        "name": "Sarah Jenkins",
+        "role": "Senior Staff Software Engineer",
+        "headline": "Building resilient distributed systems, developer tooling, and modern web platforms.",
+        "bio": "Over 8 years designing fault-tolerant backend microservices and delightful front-end web applications with TypeScript, Go, and Rust. Passionate about developer productivity and open-source software.",
+        "location": "San Francisco, CA (Remote)",
+        "avatarUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80"
+      },
+      "about": {
+        "title": "Background",
+        "content": "I specialize in full-stack architecture, high-throughput message streaming, and distributed databases. Previously led engineering initiatives at Stripe and Cloudflare scaling real-time payment ingestion pipelines.\n\nWhen I am not debugging concurrency issues, I mentor early-career engineers and contribute to open-source systems libraries.",
+        "highlightText": "Available for high-impact architecture consulting and staff-level roles.",
+        "yearsOfExperience": "8+ Years",
+        "availability": "Open to select advisory & senior roles"
+      },
+      "projects": [
+        {
+          "id": "proj_dev_1",
+          "title": "KubeStream - Realtime Event Router",
+          "summary": "A high-throughput telemetry router written in Rust with sub-millisecond p99 latency for Kubernetes cluster observability.",
+          "images": [
+            "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Rust",
+            "Tokio",
+            "eBPF",
+            "Prometheus",
+            "Kubernetes"
+          ],
+          "role": "Lead Architect & Maintainer",
+          "liveLink": "https://github.com/example/kubestream",
+          "repoLink": "https://github.com/example/kubestream",
+          "featured": true
+        },
+        {
+          "id": "proj_dev_2",
+          "title": "TypeSync - Distributed State Engine",
+          "summary": "Conflict-free replicated data types (CRDT) engine powering multi-user collaborative editing in modern web browsers.",
+          "images": [
+            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "TypeScript",
+            "WebAssembly",
+            "WebSockets",
+            "IndexedDB"
+          ],
+          "role": "Core Contributor",
+          "liveLink": "https://typesync-demo.vercel.app",
+          "repoLink": "https://github.com/example/typesync",
+          "featured": true
+        },
+        {
+          "id": "proj_dev_3",
+          "title": "PulseDB - Time-Series Storage Engine",
+          "summary": "Lightweight, memory-efficient columnar storage engine designed for edge analytics and IoT telemetry ingestion.",
+          "images": [
+            "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Go",
+            "gRPC",
+            "RocksDB",
+            "Docker"
+          ],
+          "role": "System Engineer",
+          "liveLink": "https://pulsedb.dev",
+          "repoLink": "https://github.com/example/pulse-db",
+          "featured": false
+        }
+      ],
+      "experience": [
+        {
+          "id": "exp_dev_1",
+          "organization": "Cloudflare",
+          "role": "Staff Infrastructure Engineer",
+          "startDate": "2022",
+          "endDate": "Present",
+          "isCurrent": true,
+          "description": "Architected global edge deployment workers processing 45B+ monthly API calls with 99.999% uptime. Reduced cold-start overhead by 42% across regional worker nodes."
+        },
+        {
+          "id": "exp_dev_2",
+          "organization": "Stripe",
+          "role": "Senior Software Engineer",
+          "startDate": "2019",
+          "endDate": "2022",
+          "isCurrent": false,
+          "description": "Engineered idempotency layers and transactional payment routing for global checkout systems. Mentored 6 mid-level engineers and drove architecture reviews."
+        },
+        {
+          "id": "exp_dev_3",
+          "organization": "Vercel",
+          "role": "Software Engineer",
+          "startDate": "2017",
+          "endDate": "2019",
+          "isCurrent": false,
+          "description": "Developed build pipeline enhancements and edge routing utilities for Next.js preview deployments."
+        }
+      ],
+      "education": [
+        {
+          "id": "edu_dev_1",
+          "institution": "University of California, Berkeley",
+          "degree": "B.S. Electrical Engineering & Computer Sciences",
+          "fieldOfStudy": "Distributed Systems & Operating Systems",
+          "startDate": "2013",
+          "endDate": "2017",
+          "description": "Graduated with Honors. Undergraduate researcher in parallel computing laboratory."
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill_cat_1",
+          "category": "Languages & Core",
+          "skills": [
+            "TypeScript",
+            "Go",
+            "Rust",
+            "Python",
+            "SQL",
+            "C++"
+          ]
+        },
+        {
+          "id": "skill_cat_2",
+          "category": "Distributed Systems & Infra",
+          "skills": [
+            "Kubernetes",
+            "Docker",
+            "PostgreSQL",
+            "Redis",
+            "Kafka",
+            "Terraform",
+            "AWS"
+          ]
+        },
+        {
+          "id": "skill_cat_3",
+          "category": "Web & API Frameworks",
+          "skills": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "GraphQL",
+            "gRPC",
+            "Tailwind CSS"
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "id": "soc_1",
+          "platform": "github",
+          "url": "https://github.com",
+          "label": "GitHub"
+        },
+        {
+          "id": "soc_2",
+          "platform": "linkedin",
+          "url": "https://linkedin.com",
+          "label": "LinkedIn"
+        },
+        {
+          "id": "soc_3",
+          "platform": "twitter",
+          "url": "https://x.com",
+          "label": "Twitter"
+        }
+      ],
+      "contact": {
+        "email": "sarah.j@devsystems.dev",
+        "location": "San Francisco, California",
+        "note": "Feel free to reach out regarding distributed systems speaking engagements or technical advisory.",
+        "bookingUrl": "https://cal.com"
+      },
+      "resume": {
+        "url": "https://example.com/resume.pdf",
+        "filename": "Sarah_Jenkins_CV_2026.pdf",
+        "lastUpdated": "October 2026"
+      },
+      "sectionsOrder": [
+        {
+          "id": "sec_profile",
+          "type": "profile",
+          "title": "Profile Header",
+          "enabled": true
+        },
+        {
+          "id": "sec_about",
+          "type": "about",
+          "title": "About & Bio",
+          "enabled": true
+        },
+        {
+          "id": "sec_projects",
+          "type": "projects",
+          "title": "Selected Projects",
+          "enabled": true
+        },
+        {
+          "id": "sec_skills",
+          "type": "skills",
+          "title": "Skills & Expertise",
+          "enabled": true
+        },
+        {
+          "id": "sec_experience",
+          "type": "experience",
+          "title": "Work Experience",
+          "enabled": true
+        },
+        {
+          "id": "sec_education",
+          "type": "education",
+          "title": "Education",
+          "enabled": true
+        },
+        {
+          "id": "sec_socials",
+          "type": "socials",
+          "title": "Online Presence",
+          "enabled": true
+        },
+        {
+          "id": "sec_resume",
+          "type": "resume",
+          "title": "Resume Download",
+          "enabled": true
+        },
+        {
+          "id": "sec_contact",
+          "type": "contact",
+          "title": "Contact & Inquiries",
+          "enabled": true
+        }
+      ],
+      "design": {
+        "template": "developer",
+        "accentColor": "indigo",
+        "fontPairing": "mono",
+        "spacing": "comfortable",
+        "imageStyle": "rounded",
+        "projectLayout": "grid"
+      }
+    },
+    "publishedData": {
+      "profile": {
+        "name": "Sarah Jenkins",
+        "role": "Senior Staff Software Engineer",
+        "headline": "Building resilient distributed systems, developer tooling, and modern web platforms.",
+        "bio": "Over 8 years designing fault-tolerant backend microservices and delightful front-end web applications with TypeScript, Go, and Rust. Passionate about developer productivity and open-source software.",
+        "location": "San Francisco, CA (Remote)",
+        "avatarUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80"
+      },
+      "about": {
+        "title": "Background",
+        "content": "I specialize in full-stack architecture, high-throughput message streaming, and distributed databases. Previously led engineering initiatives at Stripe and Cloudflare scaling real-time payment ingestion pipelines.\n\nWhen I am not debugging concurrency issues, I mentor early-career engineers and contribute to open-source systems libraries.",
+        "highlightText": "Available for high-impact architecture consulting and staff-level roles.",
+        "yearsOfExperience": "8+ Years",
+        "availability": "Open to select advisory & senior roles"
+      },
+      "projects": [
+        {
+          "id": "proj_dev_1",
+          "title": "KubeStream - Realtime Event Router",
+          "summary": "A high-throughput telemetry router written in Rust with sub-millisecond p99 latency for Kubernetes cluster observability.",
+          "images": [
+            "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Rust",
+            "Tokio",
+            "eBPF",
+            "Prometheus",
+            "Kubernetes"
+          ],
+          "role": "Lead Architect & Maintainer",
+          "liveLink": "https://github.com/example/kubestream",
+          "repoLink": "https://github.com/example/kubestream",
+          "featured": true
+        },
+        {
+          "id": "proj_dev_2",
+          "title": "TypeSync - Distributed State Engine",
+          "summary": "Conflict-free replicated data types (CRDT) engine powering multi-user collaborative editing in modern web browsers.",
+          "images": [
+            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "TypeScript",
+            "WebAssembly",
+            "WebSockets",
+            "IndexedDB"
+          ],
+          "role": "Core Contributor",
+          "liveLink": "https://typesync-demo.vercel.app",
+          "repoLink": "https://github.com/example/typesync",
+          "featured": true
+        },
+        {
+          "id": "proj_dev_3",
+          "title": "PulseDB - Time-Series Storage Engine",
+          "summary": "Lightweight, memory-efficient columnar storage engine designed for edge analytics and IoT telemetry ingestion.",
+          "images": [
+            "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Go",
+            "gRPC",
+            "RocksDB",
+            "Docker"
+          ],
+          "role": "System Engineer",
+          "liveLink": "https://pulsedb.dev",
+          "repoLink": "https://github.com/example/pulse-db",
+          "featured": false
+        }
+      ],
+      "experience": [
+        {
+          "id": "exp_dev_1",
+          "organization": "Cloudflare",
+          "role": "Staff Infrastructure Engineer",
+          "startDate": "2022",
+          "endDate": "Present",
+          "isCurrent": true,
+          "description": "Architected global edge deployment workers processing 45B+ monthly API calls with 99.999% uptime. Reduced cold-start overhead by 42% across regional worker nodes."
+        },
+        {
+          "id": "exp_dev_2",
+          "organization": "Stripe",
+          "role": "Senior Software Engineer",
+          "startDate": "2019",
+          "endDate": "2022",
+          "isCurrent": false,
+          "description": "Engineered idempotency layers and transactional payment routing for global checkout systems. Mentored 6 mid-level engineers and drove architecture reviews."
+        },
+        {
+          "id": "exp_dev_3",
+          "organization": "Vercel",
+          "role": "Software Engineer",
+          "startDate": "2017",
+          "endDate": "2019",
+          "isCurrent": false,
+          "description": "Developed build pipeline enhancements and edge routing utilities for Next.js preview deployments."
+        }
+      ],
+      "education": [
+        {
+          "id": "edu_dev_1",
+          "institution": "University of California, Berkeley",
+          "degree": "B.S. Electrical Engineering & Computer Sciences",
+          "fieldOfStudy": "Distributed Systems & Operating Systems",
+          "startDate": "2013",
+          "endDate": "2017",
+          "description": "Graduated with Honors. Undergraduate researcher in parallel computing laboratory."
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill_cat_1",
+          "category": "Languages & Core",
+          "skills": [
+            "TypeScript",
+            "Go",
+            "Rust",
+            "Python",
+            "SQL",
+            "C++"
+          ]
+        },
+        {
+          "id": "skill_cat_2",
+          "category": "Distributed Systems & Infra",
+          "skills": [
+            "Kubernetes",
+            "Docker",
+            "PostgreSQL",
+            "Redis",
+            "Kafka",
+            "Terraform",
+            "AWS"
+          ]
+        },
+        {
+          "id": "skill_cat_3",
+          "category": "Web & API Frameworks",
+          "skills": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "GraphQL",
+            "gRPC",
+            "Tailwind CSS"
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "id": "soc_1",
+          "platform": "github",
+          "url": "https://github.com",
+          "label": "GitHub"
+        },
+        {
+          "id": "soc_2",
+          "platform": "linkedin",
+          "url": "https://linkedin.com",
+          "label": "LinkedIn"
+        },
+        {
+          "id": "soc_3",
+          "platform": "twitter",
+          "url": "https://x.com",
+          "label": "Twitter"
+        }
+      ],
+      "contact": {
+        "email": "sarah.j@devsystems.dev",
+        "location": "San Francisco, California",
+        "note": "Feel free to reach out regarding distributed systems speaking engagements or technical advisory.",
+        "bookingUrl": "https://cal.com"
+      },
+      "resume": {
+        "url": "https://example.com/resume.pdf",
+        "filename": "Sarah_Jenkins_CV_2026.pdf",
+        "lastUpdated": "October 2026"
+      },
+      "sectionsOrder": [
+        {
+          "id": "sec_profile",
+          "type": "profile",
+          "title": "Profile Header",
+          "enabled": true
+        },
+        {
+          "id": "sec_about",
+          "type": "about",
+          "title": "About & Bio",
+          "enabled": true
+        },
+        {
+          "id": "sec_projects",
+          "type": "projects",
+          "title": "Selected Projects",
+          "enabled": true
+        },
+        {
+          "id": "sec_skills",
+          "type": "skills",
+          "title": "Skills & Expertise",
+          "enabled": true
+        },
+        {
+          "id": "sec_experience",
+          "type": "experience",
+          "title": "Work Experience",
+          "enabled": true
+        },
+        {
+          "id": "sec_education",
+          "type": "education",
+          "title": "Education",
+          "enabled": true
+        },
+        {
+          "id": "sec_socials",
+          "type": "socials",
+          "title": "Online Presence",
+          "enabled": true
+        },
+        {
+          "id": "sec_resume",
+          "type": "resume",
+          "title": "Resume Download",
+          "enabled": true
+        },
+        {
+          "id": "sec_contact",
+          "type": "contact",
+          "title": "Contact & Inquiries",
+          "enabled": true
+        }
+      ],
+      "design": {
+        "template": "developer",
+        "accentColor": "indigo",
+        "fontPairing": "mono",
+        "spacing": "comfortable",
+        "imageStyle": "rounded",
+        "projectLayout": "grid"
+      }
+    }
+  },
+  {
+    "id": "folio_alex_chen_studio",
+    "userId": "user_alex_chen",
+    "settings": {
+      "title": "Alex Chen — Creative Direction & Art Direction",
+      "slug": "alex-chen",
+      "seoTitle": "Alex Chen — Art Director & Visual Designer",
+      "seoDescription": "Selected works in brand universe design, spatial computing interfaces, and editorial design."
+    },
+    "status": "published",
+    "createdAt": "2026-10-04T14:48:03.907Z",
+    "updatedAt": "2026-10-24T02:48:03.907Z",
+    "publishedAt": "2026-10-24T02:48:03.907Z",
+    "publishedSlug": "alex-chen",
+    "draftData": {
+      "profile": {
+        "name": "Alex Chen",
+        "role": "Independent Art Director & Visual Designer",
+        "headline": "Crafting brand identities, visual languages, and tactile digital products for forward-thinking studios.",
+        "bio": "Specialized in brand systems, editorial visual design, and interactive design direction. Partnered with Apple, Nike, Teenage Engineering, and leading venture-backed startups.",
+        "location": "New York & Stockholm",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+      },
+      "about": {
+        "title": "Creative Practice",
+        "content": "I operate at the intersection of graphic design, motion, and digital product craftsmanship. Every project is guided by purposeful typography, thoughtful material tension, and an obsession with clarity.\n\nAvailable for selected brand identity commissions, product launch creative direction, and design consulting.",
+        "highlightText": "Winner of Awwwards Site of the Year 2024 and TDC Certificate of Typographic Excellence.",
+        "yearsOfExperience": "10 Years",
+        "availability": "Booking projects for Q1 2027"
+      },
+      "projects": [
+        {
+          "id": "proj_studio_1",
+          "title": "Monolith - Spatial Audio Hardware & App",
+          "summary": "Complete brand universe, packaging architecture, tactile physical device industrial guidelines, and companion mobile interface.",
+          "images": [
+            "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Art Direction",
+            "3D / Cinema4D",
+            "Brand Identity",
+            "Packaging"
+          ],
+          "role": "Creative Director",
+          "liveLink": "https://example.com/monolith",
+          "featured": true
+        },
+        {
+          "id": "proj_studio_2",
+          "title": "Aura Journal - Editorial Book Series",
+          "summary": "A biannual print publication on modern architecture, brutalist interiors, and sustainable craftsmanship across Scandinavia.",
+          "images": [
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Editorial Design",
+            "Custom Typeface",
+            "Print Production"
+          ],
+          "role": "Lead Designer",
+          "liveLink": "https://example.com/aura",
+          "featured": true
+        },
+        {
+          "id": "proj_studio_3",
+          "title": "Solstice Electric Vehicles - Digital Interface",
+          "summary": "In-cabin digital instrument cluster and mobile charging telemetry for next-generation electric luxury gran tourers.",
+          "images": [
+            "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "UI/UX Systems",
+            "Motion Design",
+            "Prototyping"
+          ],
+          "role": "Design Lead",
+          "liveLink": "https://example.com/solstice",
+          "featured": false
+        }
+      ],
+      "experience": [
+        {
+          "id": "exp_studio_1",
+          "organization": "Studio Forma NY",
+          "role": "Principal Art Director",
+          "startDate": "2021",
+          "endDate": "Present",
+          "isCurrent": true,
+          "description": "Directing visual strategy, typographic systems, and digital exhibitions for luxury, design, and cultural institutions."
+        },
+        {
+          "id": "exp_studio_2",
+          "organization": "Pentagram",
+          "role": "Senior Designer",
+          "startDate": "2017",
+          "endDate": "2021",
+          "isCurrent": false,
+          "description": "Collaborated on global rebrands, environmental signage systems, and identity standards for major international cultural clients."
+        }
+      ],
+      "education": [
+        {
+          "id": "edu_studio_1",
+          "institution": "Rhode Island School of Design (RISD)",
+          "degree": "BFA Graphic Design",
+          "startDate": "2013",
+          "endDate": "2017",
+          "description": "Concentration in experimental typography and publication design."
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill_cat_s1",
+          "category": "Creative Disciplines",
+          "skills": [
+            "Brand Identity",
+            "Art Direction",
+            "Typography",
+            "Creative Strategy",
+            "Editorial Design"
+          ]
+        },
+        {
+          "id": "skill_cat_s2",
+          "category": "Design Tools",
+          "skills": [
+            "Figma",
+            "Adobe Creative Suite",
+            "Cinema 4D",
+            "Blender",
+            "Glyphs"
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "id": "soc_s1",
+          "platform": "dribbble",
+          "url": "https://dribbble.com",
+          "label": "Dribbble"
+        },
+        {
+          "id": "soc_s2",
+          "platform": "linkedin",
+          "url": "https://linkedin.com",
+          "label": "LinkedIn"
+        },
+        {
+          "id": "soc_s3",
+          "platform": "twitter",
+          "url": "https://x.com",
+          "label": "Twitter"
+        }
+      ],
+      "contact": {
+        "email": "alex.chen@designstudio.io",
+        "location": "New York / Stockholm",
+        "note": "Currently considering client commissions, jury invitations, and keynote discussions."
+      },
+      "resume": {
+        "url": "https://example.com/alex-chen-portfolio.pdf",
+        "filename": "Alex_Chen_Selected_Works.pdf",
+        "lastUpdated": "September 2026"
+      },
+      "sectionsOrder": [
+        {
+          "id": "sec_profile",
+          "type": "profile",
+          "title": "Profile Header",
+          "enabled": true
+        },
+        {
+          "id": "sec_about",
+          "type": "about",
+          "title": "About & Bio",
+          "enabled": true
+        },
+        {
+          "id": "sec_projects",
+          "type": "projects",
+          "title": "Selected Projects",
+          "enabled": true
+        },
+        {
+          "id": "sec_skills",
+          "type": "skills",
+          "title": "Skills & Expertise",
+          "enabled": true
+        },
+        {
+          "id": "sec_experience",
+          "type": "experience",
+          "title": "Work Experience",
+          "enabled": true
+        },
+        {
+          "id": "sec_education",
+          "type": "education",
+          "title": "Education",
+          "enabled": true
+        },
+        {
+          "id": "sec_socials",
+          "type": "socials",
+          "title": "Online Presence",
+          "enabled": true
+        },
+        {
+          "id": "sec_resume",
+          "type": "resume",
+          "title": "Resume Download",
+          "enabled": true
+        },
+        {
+          "id": "sec_contact",
+          "type": "contact",
+          "title": "Contact & Inquiries",
+          "enabled": true
+        }
+      ],
+      "design": {
+        "template": "studio",
+        "accentColor": "indigo",
+        "fontPairing": "grotesk",
+        "spacing": "comfortable",
+        "imageStyle": "soft",
+        "projectLayout": "grid"
+      }
+    },
+    "publishedData": {
+      "profile": {
+        "name": "Alex Chen",
+        "role": "Independent Art Director & Visual Designer",
+        "headline": "Crafting brand identities, visual languages, and tactile digital products for forward-thinking studios.",
+        "bio": "Specialized in brand systems, editorial visual design, and interactive design direction. Partnered with Apple, Nike, Teenage Engineering, and leading venture-backed startups.",
+        "location": "New York & Stockholm",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+      },
+      "about": {
+        "title": "Creative Practice",
+        "content": "I operate at the intersection of graphic design, motion, and digital product craftsmanship. Every project is guided by purposeful typography, thoughtful material tension, and an obsession with clarity.\n\nAvailable for selected brand identity commissions, product launch creative direction, and design consulting.",
+        "highlightText": "Winner of Awwwards Site of the Year 2024 and TDC Certificate of Typographic Excellence.",
+        "yearsOfExperience": "10 Years",
+        "availability": "Booking projects for Q1 2027"
+      },
+      "projects": [
+        {
+          "id": "proj_studio_1",
+          "title": "Monolith - Spatial Audio Hardware & App",
+          "summary": "Complete brand universe, packaging architecture, tactile physical device industrial guidelines, and companion mobile interface.",
+          "images": [
+            "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Art Direction",
+            "3D / Cinema4D",
+            "Brand Identity",
+            "Packaging"
+          ],
+          "role": "Creative Director",
+          "liveLink": "https://example.com/monolith",
+          "featured": true
+        },
+        {
+          "id": "proj_studio_2",
+          "title": "Aura Journal - Editorial Book Series",
+          "summary": "A biannual print publication on modern architecture, brutalist interiors, and sustainable craftsmanship across Scandinavia.",
+          "images": [
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Editorial Design",
+            "Custom Typeface",
+            "Print Production"
+          ],
+          "role": "Lead Designer",
+          "liveLink": "https://example.com/aura",
+          "featured": true
+        },
+        {
+          "id": "proj_studio_3",
+          "title": "Solstice Electric Vehicles - Digital Interface",
+          "summary": "In-cabin digital instrument cluster and mobile charging telemetry for next-generation electric luxury gran tourers.",
+          "images": [
+            "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "UI/UX Systems",
+            "Motion Design",
+            "Prototyping"
+          ],
+          "role": "Design Lead",
+          "liveLink": "https://example.com/solstice",
+          "featured": false
+        }
+      ],
+      "experience": [
+        {
+          "id": "exp_studio_1",
+          "organization": "Studio Forma NY",
+          "role": "Principal Art Director",
+          "startDate": "2021",
+          "endDate": "Present",
+          "isCurrent": true,
+          "description": "Directing visual strategy, typographic systems, and digital exhibitions for luxury, design, and cultural institutions."
+        },
+        {
+          "id": "exp_studio_2",
+          "organization": "Pentagram",
+          "role": "Senior Designer",
+          "startDate": "2017",
+          "endDate": "2021",
+          "isCurrent": false,
+          "description": "Collaborated on global rebrands, environmental signage systems, and identity standards for major international cultural clients."
+        }
+      ],
+      "education": [
+        {
+          "id": "edu_studio_1",
+          "institution": "Rhode Island School of Design (RISD)",
+          "degree": "BFA Graphic Design",
+          "startDate": "2013",
+          "endDate": "2017",
+          "description": "Concentration in experimental typography and publication design."
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill_cat_s1",
+          "category": "Creative Disciplines",
+          "skills": [
+            "Brand Identity",
+            "Art Direction",
+            "Typography",
+            "Creative Strategy",
+            "Editorial Design"
+          ]
+        },
+        {
+          "id": "skill_cat_s2",
+          "category": "Design Tools",
+          "skills": [
+            "Figma",
+            "Adobe Creative Suite",
+            "Cinema 4D",
+            "Blender",
+            "Glyphs"
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "id": "soc_s1",
+          "platform": "dribbble",
+          "url": "https://dribbble.com",
+          "label": "Dribbble"
+        },
+        {
+          "id": "soc_s2",
+          "platform": "linkedin",
+          "url": "https://linkedin.com",
+          "label": "LinkedIn"
+        },
+        {
+          "id": "soc_s3",
+          "platform": "twitter",
+          "url": "https://x.com",
+          "label": "Twitter"
+        }
+      ],
+      "contact": {
+        "email": "alex.chen@designstudio.io",
+        "location": "New York / Stockholm",
+        "note": "Currently considering client commissions, jury invitations, and keynote discussions."
+      },
+      "resume": {
+        "url": "https://example.com/alex-chen-portfolio.pdf",
+        "filename": "Alex_Chen_Selected_Works.pdf",
+        "lastUpdated": "September 2026"
+      },
+      "sectionsOrder": [
+        {
+          "id": "sec_profile",
+          "type": "profile",
+          "title": "Profile Header",
+          "enabled": true
+        },
+        {
+          "id": "sec_about",
+          "type": "about",
+          "title": "About & Bio",
+          "enabled": true
+        },
+        {
+          "id": "sec_projects",
+          "type": "projects",
+          "title": "Selected Projects",
+          "enabled": true
+        },
+        {
+          "id": "sec_skills",
+          "type": "skills",
+          "title": "Skills & Expertise",
+          "enabled": true
+        },
+        {
+          "id": "sec_experience",
+          "type": "experience",
+          "title": "Work Experience",
+          "enabled": true
+        },
+        {
+          "id": "sec_education",
+          "type": "education",
+          "title": "Education",
+          "enabled": true
+        },
+        {
+          "id": "sec_socials",
+          "type": "socials",
+          "title": "Online Presence",
+          "enabled": true
+        },
+        {
+          "id": "sec_resume",
+          "type": "resume",
+          "title": "Resume Download",
+          "enabled": true
+        },
+        {
+          "id": "sec_contact",
+          "type": "contact",
+          "title": "Contact & Inquiries",
+          "enabled": true
+        }
+      ],
+      "design": {
+        "template": "studio",
+        "accentColor": "indigo",
+        "fontPairing": "grotesk",
+        "spacing": "comfortable",
+        "imageStyle": "soft",
+        "projectLayout": "grid"
+      }
+    }
+  },
+  {
+    "id": "folio_marcus_vance_min",
+    "userId": "user_marcus_vance",
+    "settings": {
+      "title": "Marcus Vance — Design Systems",
+      "slug": "marcus-vance",
+      "seoTitle": "Marcus Vance — Product Design & Systems",
+      "seoDescription": "Design systems lead and typography specialist crafting deliberate software interfaces."
+    },
+    "status": "published",
+    "createdAt": "2026-09-24T14:48:03.907Z",
+    "updatedAt": "2026-10-24T12:48:03.907Z",
+    "publishedAt": "2026-10-24T12:48:03.907Z",
+    "publishedSlug": "marcus-vance",
+    "draftData": {
+      "profile": {
+        "name": "Marcus Vance",
+        "role": "Product Designer & Design Systems Lead",
+        "headline": "Designing thoughtful, humane software interfaces with uncompromising attention to typography and rhythm.",
+        "bio": "Over seven years creating scalable design systems and accessible consumer software. Believer in subtraction, deliberate typography, and high-craft interaction details.",
+        "location": "London, UK",
+        "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+      },
+      "about": {
+        "title": "Philosophy & Focus",
+        "content": "I believe the best interfaces feel inevitable. They get out of the user's way, communicate with calm confidence, and age gracefully.\n\nMy daily work involves crafting design foundations, writing comprehensive component documentation, and bridging the gap between product strategy and front-end engineering.",
+        "highlightText": "Focused on clarity, accessibility, and durability over fleeting design trends.",
+        "yearsOfExperience": "7+ Years",
+        "availability": "Available for design systems consulting"
+      },
+      "projects": [
+        {
+          "id": "proj_min_1",
+          "title": "Linear Design System v2",
+          "summary": "A unified component library, color token architecture, and keyboard navigation model used across desktop, web, and mobile clients.",
+          "images": [
+            "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Design Tokens",
+            "Figma Variables",
+            "Component Architecture",
+            "Accessibility"
+          ],
+          "role": "Design Systems Architect",
+          "liveLink": "https://example.com/system",
+          "featured": true
+        },
+        {
+          "id": "proj_min_2",
+          "title": "Calm Reader - Distraction-free Reading Client",
+          "summary": "A cross-platform typography-first reading environment designed for extended reading without eye fatigue or algorithmic interruptions.",
+          "images": [
+            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Product Strategy",
+            "Typography",
+            "Prototyping"
+          ],
+          "role": "Product Designer",
+          "liveLink": "https://example.com/reader",
+          "featured": true
+        },
+        {
+          "id": "proj_min_3",
+          "title": "Notate - Markdown Knowledge Base",
+          "summary": "Local-first networked thought notebook with instant full-text search, bidirectional linking, and zero cloud lock-in.",
+          "images": [
+            "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Interface Design",
+            "UX Research",
+            "Information Architecture"
+          ],
+          "role": "Lead UI/UX Designer",
+          "liveLink": "https://example.com/notate",
+          "featured": false
+        }
+      ],
+      "experience": [
+        {
+          "id": "exp_min_1",
+          "organization": "Vercel",
+          "role": "Staff Product Designer",
+          "startDate": "2023",
+          "endDate": "Present",
+          "isCurrent": true,
+          "description": "Leading interface design for cloud infrastructure dashboards, deployments, and edge network analytics tools."
+        },
+        {
+          "id": "exp_min_2",
+          "organization": "Monzo Bank",
+          "role": "Senior Product Designer",
+          "startDate": "2020",
+          "endDate": "2023",
+          "isCurrent": false,
+          "description": "Redesigned core budgeting and financial savings features, improving 30-day user retention by 18%."
+        }
+      ],
+      "education": [
+        {
+          "id": "edu_min_1",
+          "institution": "Central Saint Martins",
+          "degree": "BA (Hons) Graphic Communication Design",
+          "startDate": "2015",
+          "endDate": "2018",
+          "description": "Specialization in typography, information design, and editorial systems."
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill_cat_m1",
+          "category": "Core Disciplines",
+          "skills": [
+            "Design Systems",
+            "Interface Architecture",
+            "User Research",
+            "Typography",
+            "Interaction Design"
+          ]
+        },
+        {
+          "id": "skill_cat_m2",
+          "category": "Implementation & Tools",
+          "skills": [
+            "Figma",
+            "HTML/CSS",
+            "TypeScript",
+            "Storybook",
+            "Git"
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "id": "soc_m1",
+          "platform": "twitter",
+          "url": "https://x.com",
+          "label": "Twitter"
+        },
+        {
+          "id": "soc_m2",
+          "platform": "github",
+          "url": "https://github.com",
+          "label": "GitHub"
+        },
+        {
+          "id": "soc_m3",
+          "platform": "linkedin",
+          "url": "https://linkedin.com",
+          "label": "LinkedIn"
+        }
+      ],
+      "contact": {
+        "email": "marcus@vancewriter.com",
+        "location": "London, United Kingdom",
+        "note": "I reply to all design discussions and thoughtful project proposals within 48 hours.",
+        "bookingUrl": "https://cal.com"
+      },
+      "resume": {
+        "url": "https://example.com/marcus-vance-cv.pdf",
+        "filename": "Marcus_Vance_Resume.pdf",
+        "lastUpdated": "August 2026"
+      },
+      "sectionsOrder": [
+        {
+          "id": "sec_profile",
+          "type": "profile",
+          "title": "Profile Header",
+          "enabled": true
+        },
+        {
+          "id": "sec_about",
+          "type": "about",
+          "title": "About & Bio",
+          "enabled": true
+        },
+        {
+          "id": "sec_projects",
+          "type": "projects",
+          "title": "Selected Projects",
+          "enabled": true
+        },
+        {
+          "id": "sec_skills",
+          "type": "skills",
+          "title": "Skills & Expertise",
+          "enabled": true
+        },
+        {
+          "id": "sec_experience",
+          "type": "experience",
+          "title": "Work Experience",
+          "enabled": true
+        },
+        {
+          "id": "sec_education",
+          "type": "education",
+          "title": "Education",
+          "enabled": true
+        },
+        {
+          "id": "sec_socials",
+          "type": "socials",
+          "title": "Online Presence",
+          "enabled": true
+        },
+        {
+          "id": "sec_resume",
+          "type": "resume",
+          "title": "Resume Download",
+          "enabled": true
+        },
+        {
+          "id": "sec_contact",
+          "type": "contact",
+          "title": "Contact & Inquiries",
+          "enabled": true
+        }
+      ],
+      "design": {
+        "template": "minimal",
+        "accentColor": "indigo",
+        "fontPairing": "editorial",
+        "spacing": "comfortable",
+        "imageStyle": "soft",
+        "projectLayout": "list"
+      }
+    },
+    "publishedData": {
+      "profile": {
+        "name": "Marcus Vance",
+        "role": "Product Designer & Design Systems Lead",
+        "headline": "Designing thoughtful, humane software interfaces with uncompromising attention to typography and rhythm.",
+        "bio": "Over seven years creating scalable design systems and accessible consumer software. Believer in subtraction, deliberate typography, and high-craft interaction details.",
+        "location": "London, UK",
+        "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+      },
+      "about": {
+        "title": "Philosophy & Focus",
+        "content": "I believe the best interfaces feel inevitable. They get out of the user's way, communicate with calm confidence, and age gracefully.\n\nMy daily work involves crafting design foundations, writing comprehensive component documentation, and bridging the gap between product strategy and front-end engineering.",
+        "highlightText": "Focused on clarity, accessibility, and durability over fleeting design trends.",
+        "yearsOfExperience": "7+ Years",
+        "availability": "Available for design systems consulting"
+      },
+      "projects": [
+        {
+          "id": "proj_min_1",
+          "title": "Linear Design System v2",
+          "summary": "A unified component library, color token architecture, and keyboard navigation model used across desktop, web, and mobile clients.",
+          "images": [
+            "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Design Tokens",
+            "Figma Variables",
+            "Component Architecture",
+            "Accessibility"
+          ],
+          "role": "Design Systems Architect",
+          "liveLink": "https://example.com/system",
+          "featured": true
+        },
+        {
+          "id": "proj_min_2",
+          "title": "Calm Reader - Distraction-free Reading Client",
+          "summary": "A cross-platform typography-first reading environment designed for extended reading without eye fatigue or algorithmic interruptions.",
+          "images": [
+            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Product Strategy",
+            "Typography",
+            "Prototyping"
+          ],
+          "role": "Product Designer",
+          "liveLink": "https://example.com/reader",
+          "featured": true
+        },
+        {
+          "id": "proj_min_3",
+          "title": "Notate - Markdown Knowledge Base",
+          "summary": "Local-first networked thought notebook with instant full-text search, bidirectional linking, and zero cloud lock-in.",
+          "images": [
+            "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "technologies": [
+            "Interface Design",
+            "UX Research",
+            "Information Architecture"
+          ],
+          "role": "Lead UI/UX Designer",
+          "liveLink": "https://example.com/notate",
+          "featured": false
+        }
+      ],
+      "experience": [
+        {
+          "id": "exp_min_1",
+          "organization": "Vercel",
+          "role": "Staff Product Designer",
+          "startDate": "2023",
+          "endDate": "Present",
+          "isCurrent": true,
+          "description": "Leading interface design for cloud infrastructure dashboards, deployments, and edge network analytics tools."
+        },
+        {
+          "id": "exp_min_2",
+          "organization": "Monzo Bank",
+          "role": "Senior Product Designer",
+          "startDate": "2020",
+          "endDate": "2023",
+          "isCurrent": false,
+          "description": "Redesigned core budgeting and financial savings features, improving 30-day user retention by 18%."
+        }
+      ],
+      "education": [
+        {
+          "id": "edu_min_1",
+          "institution": "Central Saint Martins",
+          "degree": "BA (Hons) Graphic Communication Design",
+          "startDate": "2015",
+          "endDate": "2018",
+          "description": "Specialization in typography, information design, and editorial systems."
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill_cat_m1",
+          "category": "Core Disciplines",
+          "skills": [
+            "Design Systems",
+            "Interface Architecture",
+            "User Research",
+            "Typography",
+            "Interaction Design"
+          ]
+        },
+        {
+          "id": "skill_cat_m2",
+          "category": "Implementation & Tools",
+          "skills": [
+            "Figma",
+            "HTML/CSS",
+            "TypeScript",
+            "Storybook",
+            "Git"
+          ]
+        }
+      ],
+      "socials": [
+        {
+          "id": "soc_m1",
+          "platform": "twitter",
+          "url": "https://x.com",
+          "label": "Twitter"
+        },
+        {
+          "id": "soc_m2",
+          "platform": "github",
+          "url": "https://github.com",
+          "label": "GitHub"
+        },
+        {
+          "id": "soc_m3",
+          "platform": "linkedin",
+          "url": "https://linkedin.com",
+          "label": "LinkedIn"
+        }
+      ],
+      "contact": {
+        "email": "marcus@vancewriter.com",
+        "location": "London, United Kingdom",
+        "note": "I reply to all design discussions and thoughtful project proposals within 48 hours.",
+        "bookingUrl": "https://cal.com"
+      },
+      "resume": {
+        "url": "https://example.com/marcus-vance-cv.pdf",
+        "filename": "Marcus_Vance_Resume.pdf",
+        "lastUpdated": "August 2026"
+      },
+      "sectionsOrder": [
+        {
+          "id": "sec_profile",
+          "type": "profile",
+          "title": "Profile Header",
+          "enabled": true
+        },
+        {
+          "id": "sec_about",
+          "type": "about",
+          "title": "About & Bio",
+          "enabled": true
+        },
+        {
+          "id": "sec_projects",
+          "type": "projects",
+          "title": "Selected Projects",
+          "enabled": true
+        },
+        {
+          "id": "sec_skills",
+          "type": "skills",
+          "title": "Skills & Expertise",
+          "enabled": true
+        },
+        {
+          "id": "sec_experience",
+          "type": "experience",
+          "title": "Work Experience",
+          "enabled": true
+        },
+        {
+          "id": "sec_education",
+          "type": "education",
+          "title": "Education",
+          "enabled": true
+        },
+        {
+          "id": "sec_socials",
+          "type": "socials",
+          "title": "Online Presence",
+          "enabled": true
+        },
+        {
+          "id": "sec_resume",
+          "type": "resume",
+          "title": "Resume Download",
+          "enabled": true
+        },
+        {
+          "id": "sec_contact",
+          "type": "contact",
+          "title": "Contact & Inquiries",
+          "enabled": true
+        }
+      ],
+      "design": {
+        "template": "minimal",
+        "accentColor": "indigo",
+        "fontPairing": "editorial",
+        "spacing": "comfortable",
+        "imageStyle": "soft",
+        "projectLayout": "list"
+      }
+    }
+  }
+]
