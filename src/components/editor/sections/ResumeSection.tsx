@@ -34,35 +34,15 @@ export function ResumeSection({ data, onChange }: ResumeSectionProps) {
 
     setIsUploading(true);
     try {
-      const formData = new FormData();
-      formData.append('file', file);
-
-      const res = await fetch('/api/upload', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!res.ok) {
-        throw new Error('Upload failed');
-      }
-
-      const uploadData = await res.json();
+      const { uploadFileClient } = await import('@/lib/data-service');
+      const uploadData = await uploadFileClient(file);
       onChange({
         url: uploadData.url,
         filename: file.name,
         lastUpdated: new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' }),
       });
-    } catch {
-      // Fallback data url
-      const reader = new FileReader();
-      reader.onload = (uploadEvent) => {
-        onChange({
-          url: uploadEvent.target?.result as string,
-          filename: file.name,
-          lastUpdated: new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' }),
-        });
-      };
-      reader.readAsDataURL(file);
+    } catch (err: any) {
+      setError(err.message || 'Upload failed');
     } finally {
       setIsUploading(false);
     }

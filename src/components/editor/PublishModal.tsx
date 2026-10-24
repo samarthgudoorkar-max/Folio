@@ -81,7 +81,8 @@ export function PublishModal({
 
   const origin = typeof window !== 'undefined' ? window.location.origin : '';
   const activeSlug = isPublished && publishedSlug ? publishedSlug : slugInput;
-  const liveUrl = `${origin}/p/${activeSlug}`;
+  const basePath = typeof window !== 'undefined' && window.location.pathname.startsWith('/Folio') ? '/Folio' : '';
+  const liveUrl = `${origin}${basePath}/p/?slug=${activeSlug}`;
 
   const handleCopy = async () => {
     try {

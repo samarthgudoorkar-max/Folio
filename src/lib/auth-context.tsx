@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { User } from './types';
 import { DEMO_USERS } from './mock-data';
+import { getActiveUser, setActiveUser } from './data-service';
 
 interface AuthContextType {
   user: User;
@@ -23,38 +24,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    async function loadSession() {
-      try {
-        const res = await fetch('/api/auth/session');
-        if (res.ok) {
-          const data = await res.json();
-          if (data.user) {
-            setUser(data.user);
-          }
-        }
-      } catch (err) {
-        console.warn('Could not load session from server, using demo user', err);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    loadSession();
+    const active = getActiveUser();
+    setUser(active);
+    setIsLoading(false);
   }, []);
 
   const switchUser = async (userId: string) => {
-    try {
-      const res = await fetch('/api/auth/session', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userId }),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        setUser(data.user);
-        window.location.reload();
-      }
-    } catch (err) {
-      console.error('Failed to switch user', err);
+    const targetUser = DEMO_USERS.find(u => u.id === userId);
+    if (targetUser) {
+      setActiveUser(targetUser.id);
+      setUser(targetUser);
+      window.location.reload();
     }
   };
 

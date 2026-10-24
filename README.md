@@ -2,6 +2,8 @@
 
 A polished, fully functional web application that allows developers, designers, students, freelancers, and creative professionals to create, customize, preview, and publish responsive portfolios without writing code.
 
+**Live Demo**: [https://samarthgudoorkar-max.github.io/Folio/](https://samarthgudoorkar-max.github.io/Folio/)
+
 Built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS** using a bespoke **Slate + Indigo** design system.
 
 ---

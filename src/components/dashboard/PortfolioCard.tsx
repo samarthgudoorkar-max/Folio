@@ -181,8 +181,8 @@ export function PortfolioCard({
             </button>
 
             {isPublished && portfolio.publishedSlug && (
-              <a
-                href={`/p/${portfolio.publishedSlug}`}
+              <Link
+                href={`/p/?slug=${portfolio.publishedSlug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-medium text-success hover:bg-success-soft rounded-lg transition-colors"
@@ -190,12 +190,12 @@ export function PortfolioCard({
               >
                 <Globe className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">Live</span>
-              </a>
+              </Link>
             )}
           </div>
 
           <Link
-            href={`/editor/${portfolio.id}`}
+            href={`/editor/?id=${portfolio.id}`}
             className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold text-white bg-primary hover:bg-primary-hover rounded-lg transition-colors shadow-subtle"
           >
             <Edit3 className="w-3.5 h-3.5" />

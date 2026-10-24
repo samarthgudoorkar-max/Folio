@@ -5,21 +5,24 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Portfolio, TemplateId } from '@/lib/types';
 import { useAuth } from '@/lib/auth-context';
+import {
+  getUserPortfolios,
+  createPortfolio,
+  duplicatePortfolio,
+  deletePortfolio,
+  updatePortfolioDraft,
+} from '@/lib/data-service';
 import { PortfolioCard } from '@/components/dashboard/PortfolioCard';
 import { CreatePortfolioModal } from '@/components/dashboard/CreatePortfolioModal';
 import { RenameModal } from '@/components/dashboard/RenameModal';
 import { DeleteModal } from '@/components/dashboard/DeleteModal';
 import { PreviewModal } from '@/components/editor/PreviewModal';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import {
   Plus,
   Search,
   FolderKanban,
-  Users,
   ChevronDown,
-  Sparkles,
-  Layers,
   ArrowRight,
   Loader2
 } from 'lucide-react';
@@ -42,14 +45,11 @@ export default function DashboardPage() {
   const [userMenuOpen, setUserMenuOpen] = useState(false);
 
   // Fetch portfolios for current user
-  const fetchPortfolios = async () => {
+  const loadUserPortfolios = () => {
     setIsLoading(true);
     try {
-      const res = await fetch('/api/portfolios');
-      if (res.ok) {
-        const data = await res.json();
-        setPortfolios(data.portfolios || []);
-      }
+      const list = getUserPortfolios(user.id);
+      setPortfolios(list);
     } catch (err) {
       console.error('Failed to load portfolios', err);
     } finally {
@@ -59,22 +59,15 @@ export default function DashboardPage() {
 
   useEffect(() => {
     if (!isAuthLoading) {
-      fetchPortfolios();
+      loadUserPortfolios();
     }
   }, [user.id, isAuthLoading]);
 
   // Actions
   const handleCreatePortfolio = async (template: TemplateId, title: string) => {
     try {
-      const res = await fetch('/api/portfolios', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ template, title: title || undefined }),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        router.push(`/editor/${data.portfolio.id}`);
-      }
+      const created = createPortfolio(user.id, template, title || undefined);
+      router.push(`/editor/?id=${created.id}`);
     } catch (err) {
       console.error('Failed to create portfolio', err);
     }
@@ -82,14 +75,8 @@ export default function DashboardPage() {
 
   const handleDuplicate = async (portfolio: Portfolio) => {
     try {
-      const res = await fetch(`/api/portfolios/${portfolio.id}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'duplicate' }),
-      });
-      if (res.ok) {
-        await fetchPortfolios();
-      }
+      duplicatePortfolio(portfolio.id, user.id);
+      loadUserPortfolios();
     } catch (err) {
       console.error('Failed to duplicate portfolio', err);
     }
@@ -98,17 +85,11 @@ export default function DashboardPage() {
   const handleRename = async (newTitle: string) => {
     if (!renamePortfolio) return;
     try {
-      const res = await fetch(`/api/portfolios/${renamePortfolio.id}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          draftData: renamePortfolio.draftData,
-          settings: { ...renamePortfolio.settings, title: newTitle },
-        }),
+      updatePortfolioDraft(renamePortfolio.id, user.id, renamePortfolio.draftData, {
+        ...renamePortfolio.settings,
+        title: newTitle,
       });
-      if (res.ok) {
-        await fetchPortfolios();
-      }
+      loadUserPortfolios();
     } catch (err) {
       console.error('Failed to rename portfolio', err);
     }
@@ -117,12 +98,8 @@ export default function DashboardPage() {
   const handleDelete = async () => {
     if (!deletePortfolioTarget) return;
     try {
-      const res = await fetch(`/api/portfolios/${deletePortfolioTarget.id}`, {
-        method: 'DELETE',
-      });
-      if (res.ok) {
-        await fetchPortfolios();
-      }
+      deletePortfolio(deletePortfolioTarget.id, user.id);
+      loadUserPortfolios();
     } catch (err) {
       console.error('Failed to delete portfolio', err);
     }

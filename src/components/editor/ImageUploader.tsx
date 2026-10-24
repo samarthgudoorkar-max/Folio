@@ -44,30 +44,11 @@ export function ImageUploader({
     setIsUploading(true);
 
     try {
-      const formData = new FormData();
-      formData.append('file', file);
-
-      const res = await fetch('/api/upload', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!res.ok) {
-        const errorData = await res.json();
-        throw new Error(errorData.error || 'Failed to upload image');
-      }
-
-      const data = await res.json();
+      const { uploadFileClient } = await import('@/lib/data-service');
+      const data = await uploadFileClient(file);
       onChange(data.url);
     } catch (err: any) {
-      // Fallback: read as data URL so user work is never lost locally!
-      const reader = new FileReader();
-      reader.onload = (uploadEvent) => {
-        if (uploadEvent.target?.result) {
-          onChange(uploadEvent.target.result as string);
-        }
-      };
-      reader.readAsDataURL(file);
+      setError(err.message || 'Failed to process image');
     } finally {
       setIsUploading(false);
       if (fileInputRef.current) {
